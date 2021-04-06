@@ -1,16 +1,14 @@
-var cors = require('cors')
-app.use(cors())
+// var app = express()
+// var cors = require('cors')
+// app.use(cors())
 
+$(function getCountries() {
 
-function getCountries() {
-    
-$.ajax({
-    url: 'http://localhost:8000/country',
-    success: function(data, statuts, response) {
-        console.log(data);
-    }
-});
-
-console.log('#3');
-    
-}
+    $.ajax({
+        url: 'http://localhost:8000/country',
+        success: function (country, statuts, response) {
+            console.log(country);
+        }
+    });
+})
+getCountries()
